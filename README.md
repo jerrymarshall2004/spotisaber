@@ -5,7 +5,7 @@ This App pulls songs from any spotify playlist and finds Beat Saber maps for the
 
 # Requirements
 JRE/JDK With JavaFX
-![I Recommend This Version](https://www.oracle.com/ca-en/java/technologies/javase/javase-jdk8-downloads.html)
+[I Recommend This Version](https://www.oracle.com/ca-en/java/technologies/javase/javase-jdk8-downloads.html)
 
 # Known Issues
 ## Not Responding
