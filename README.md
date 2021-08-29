@@ -1,11 +1,14 @@
 # SpotiSaber
 This App pulls songs from any spotify playlist and finds Beat Saber maps for them made by the community on Beat Saver!
 
-![Image of Yaktocat](https://github.com/jerrymarshall2004/spotisaber/blob/main/SpotiSaber Screenshot.png)
+![Image](https://github.com/jerrymarshall2004/spotisaber/blob/main/preview.png)
 
 # Requirements
 JRE/JDK With JavaFX
 [I Recommend This Version](https://www.oracle.com/ca-en/java/technologies/javase/javase-jdk8-downloads.html)
+
+# How to use the application.
+When you have a Java Runtime Enviroment. Double click the Spotisaber jar file. Once opened input a playlist into the text input then hit go! A prompt will come up asking for you auth the spotify application, click download and all of the songs will begin downloading from your default browser!
 
 # Known Issues
 ## Not Responding
