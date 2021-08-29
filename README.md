@@ -16,3 +16,7 @@ Yes, I'm aware the app freezes. For whatever reason at the moment, the Java FX W
 
 ## Playlist 100 Song Limit
 I'm not too sure what's causing this, but we are looking to find it as soon as possible!
+
+# Communities
+[Reddit](https://www.reddit.com/r/SpotiSaber/)
+[Discord](https://discord.gg/3MjFCkmAk4)
