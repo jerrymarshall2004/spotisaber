@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>SpotiSaber</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-lightbulb"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>SPOTISABER</h1>
+								<p>Get BeatSaver maps from Spotify playlists. FOR FREE.</p>
+
+								<h1 id="songsDownloaded"></h1>
+								<h2>Songs Downloaded!</h2>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="https://github.com/jerrymarshall2004/spotisaber/releases">Download</a></li>
+								<li><a href="https://discord.gg/e8QdTztRY3">Discord</a></li>
+								<li><a href="https://github.com/jerrymarshall2004/spotisaber/releases">Github</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+		
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; SPOTISABER 2021.</p>
+					</footer>
+
+			</div>
+
+			<script>
+			    var mapsFound;
+    url = 'http://api.spotisaber.games/mapsFound'
+
+    var intervalId = window.setInterval(function(){
+        updateFoundSongs();
+    }, 2000);
+
+    function updateFoundSongs(){
+
+    let request = new XMLHttpRequest();
+    request.open('GET', url);
+    request.responseType = 'text';
+    request.onload = function() {
+        document.getElementById("songsDownloaded").innerHTML = request.response;
+    };
+    request.send();
+}
+updateFoundSongs();
+
+	
+			</script>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
